@@ -35,6 +35,7 @@ class Sensor:
             else:
                 print("Invalid vehicle status. Please try again.")
 
+
 # Determine and display appropriate driving action based on current sensor values.
 # STOP if the traffic light is red or a pedestrian/vehicle is detected.
 # Caution if the traffic light is yellow and no pedestrian/vehicle is detected.
@@ -50,6 +51,7 @@ def print_message(sensor):
     # Displays current status of sensors
     print("\nTraffic light:", sensor.traffic_light,  " , Pedestrian:", sensor.pedestrian, " , Vehicle:", sensor.vehicle, "\n")
 
+
 # Main function to run  Car Vision Detector Processing Program.
 # Continuously prompts the user to update sensor inputs.
 # Displays the driving action based on updated sensor values. 
@@ -58,6 +60,7 @@ def main():
     # Prints program title
     print("\n***ENSF 692 Car Vision Detector Processing Program***\n")
     sensor = Sensor()
+    
     # Loop continuously until user chooses to exit (option 0)
     while True:
         print("Are changes detected in the vision input")
